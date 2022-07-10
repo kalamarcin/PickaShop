@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+    
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+    
+  }
+  
+  
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .wrapper h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .wrapper .user-box {
+    position: relative;
+  }
+  
+  .wrapper .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .wrapper .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+textarea {
+  position: relative;
+  color: #ffffff;
+  background-color: #243b55;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+  width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+  
+  .wrapper form a {
+    
+      outline: none;
+      background: #141e30;
+      width: 100%;
+      border: 0;
+      border-radius: 4px;
+      padding: 12px 20px;
+      color: white;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      text-transform: uppercase;
+      cursor: pointer;
+  }
+  
+  .wrapper a:hover {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffffff,
+                0 0 25px #ffffff,
+                0 0 50px #ffffff,
+                0 0 100px #ffffff;
+  }
+  
+  .wrapper a span {
+    position: absolute;
+    display: block;
+  }
+  
+  
