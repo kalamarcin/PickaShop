@@ -3,10 +3,13 @@ html {
 
 }
 
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
 
 
 }
@@ -19,6 +22,42 @@ body {
   background-size: cover;
 }
 
+.logo {
+  display: flex;
+}
+
+
+img {
+  width: 110px;
+  position: absolute;
+  top: 70px;
+  right: 100px;
+
+}
+
+.pizza-box {
+
+  display: flex;
+  align-items: center;
+  height: 50px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pizza-box select {
+  padding: 2px;
+  background-color: #d5d5d5;
+  position: absolute;
+  right: 30px;
+  font-size: 15px;
+  text-align: center;
+  width: 180px;
+  
+
+
+}
 
 .wrapper {
   position: absolute;
@@ -40,20 +79,32 @@ body {
   text-align: center;
 }
 
-.wrapper .order-box {
 
+
+.wrapper .sos-box {
+font-weight: bold;
+  display: block;
   color: #ffffff;
   margin-bottom: 20px;
   font-size: 16px;
+  
+}
+
+.wrapper li {
+  list-style-type: none;
+  margin: 16px;
+  font-weight: lighter;
 }
 
 .wrapper .user-box {
   position: relative;
+
 }
 
 .wrapper .user-box input {
+  
   width: 100%;
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 16px;
   color: #fff;
   margin-bottom: 30px;
@@ -63,16 +114,6 @@ body {
   background: transparent;
 }
 
-.wrapper .user-box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: .5s;
-}
 
 textarea {
   position: relative;
@@ -90,36 +131,55 @@ textarea {
   background: transparent;
 }
 
+
+.buttons {
+  display: flex;                  
+  flex-direction: row;           
+  flex-wrap: nowrap;              
+  justify-content: space-between;
+}
+
+.order-btn {
+  
+  margin-top: 30px;
+  
+}
+.delate-btn {
+  
+  margin-top: 30px;
+ 
+}
+
 .wrapper form a {
 
   outline: none;
   background: #141e30;
-
   border: 0;
   border-radius: 4px;
   padding: 12px 20px;
   color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .wrapper a:hover {
   background: #ffffff;
   color: rgb(0, 0, 0);
   border-radius: 1px;
-  box-shadow: 0 0 10px #ffffff,
-
-
+  box-shadow: 0 0 10px #ffffff;
+  transition-duration: 1200ms;
 }
 
 .wrapper a span {
   position: absolute;
   display: block;
 }
-span {
+.span-condition{
+  color: #ffffff4e;
+  font-weight: lighter;
+  font-style: italic;
+}
+.span-footer {
   color: #9c9c9c;
   font-size: 10px;
-}
-
-.order-btn {
-  margin-top: 30px;
 }

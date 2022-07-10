@@ -16,6 +16,37 @@ body {
   background-size: cover;
 }
 
+.logo {
+  display: flex;
+}
+
+img {
+  width: 110px;
+  position: absolute;
+  top: 70px;
+  right: 100px;
+}
+
+.pizza-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pizza-box select {
+  padding: 2px;
+  background-color: #d5d5d5;
+  position: absolute;
+  right: 30px;
+  font-size: 15px;
+  text-align: center;
+  width: 180px;
+}
+
 .wrapper {
   position: absolute;
   top: 50%;
@@ -36,10 +67,18 @@ body {
   text-align: center;
 }
 
-.wrapper .order-box {
+.wrapper .sos-box {
+  font-weight: bold;
+  display: block;
   color: #ffffff;
   margin-bottom: 20px;
   font-size: 16px;
+}
+
+.wrapper li {
+  list-style-type: none;
+  margin: 16px;
+  font-weight: lighter;
 }
 
 .wrapper .user-box {
@@ -48,7 +87,7 @@ body {
 
 .wrapper .user-box input {
   width: 100%;
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 16px;
   color: #fff;
   margin-bottom: 30px;
@@ -56,17 +95,6 @@ body {
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
-}
-
-.wrapper .user-box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: 0.5s;
 }
 
 textarea {
@@ -83,6 +111,21 @@ textarea {
   background: transparent;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.order-btn {
+  margin-top: 30px;
+}
+
+.delate-btn {
+  margin-top: 30px;
+}
+
 .wrapper form a {
   outline: none;
   background: #141e30;
@@ -91,6 +134,7 @@ textarea {
   padding: 12px 20px;
   color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .wrapper a:hover {
@@ -98,6 +142,7 @@ textarea {
   color: rgb(0, 0, 0);
   border-radius: 1px;
   box-shadow: 0 0 10px #ffffff;
+  transition-duration: 1200ms;
 }
 
 .wrapper a span {
@@ -105,11 +150,13 @@ textarea {
   display: block;
 }
 
-span {
-  color: #9c9c9c;
-  font-size: 10px;
+.span-condition {
+  color: rgba(255, 255, 255, 0.3058823529);
+  font-weight: lighter;
+  font-style: italic;
 }
 
-.order-btn {
-  margin-top: 30px;
+.span-footer {
+  color: #9c9c9c;
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */

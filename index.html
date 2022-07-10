@@ -6,39 +6,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style\style.css">
+
   <title>Document</title>
 </head>
 
 <body>
   <div class="wallpaper">
+    <div class="logo"><img src="img\PickaShop_Biale.png" alt="logo_PickaShop"></div>
 
     <div class="wrapper">
       <h2>ZAMÓWIENIE</h2>
       <form>
 
-        <div class="order-box">
-          <input type="checkbox" name="mode" value="Online">
-          <label>Margaritta</label>
-          
-        </div>
-        <div class="order-box">
-          <input type="checkbox" name="mode" value="Online">
-          <label>Margaritta</label>
-        </div>
+        <div class="pizza-box">
+          <label for="pizza">Wybierz pizzę:*</label>
+          <select id="pizza" name="pizza" required="">
 
-        <div class="order-box">
-          <input type="checkbox" name="mode" value="Online">
-          <label>Margaritta</label>
-        </div>
+            <option value="0">-- Wybierz --</option>
+            <option value="Margherita">Margherita</option>
+            <option value="Neapolitańska">Neapolitańska</option>
+            <option value="Capricciosa">Capricciosa</option>
+            <option value="Sycylijska">Sycylijska</option>
 
-        <div class="order-box">
-          <input type="checkbox" name="mode" value="Online">
-          <label>Margaritta</label>
+          </select>
         </div>
+        <div class="sos-box">Wybierz sos:<span class="span-condition"> (max. 2)</span>
 
-        <div class="order-box">
-          <input type="checkbox" name="mode" value="Online">
-          <label>Margaritta</label>
+          <li>
+            <input type="checkbox" name="mode" value="Pomidorowy" required="">
+            <label>Pomidorowy</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="mode" value="Czosnkowy" required="">
+            <label>Czosnkowy</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="mode" value="OstryPomidorowy" required="">
+            <label>Ostry Pomidorowy</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="mode" value="Bazyliowy" required="">
+            <label>Bazyliowy</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="mode" value="Serowy" required="">
+            <label>Serowy</label>
+          </li>
+
         </div>
 
         <div class="user-box">
@@ -66,13 +84,19 @@
           <textarea name="tekst" rows="5" placeholder="Wiadomość dla kucharza"></textarea>
 
           </textarea>
-          <span>*Pola obowiązkowe</span>
+          <span class="span-footer">*Pola obowiązkowe</span>
 
         </div>
-
-<div class="order-btn">
-        <a href="#">Zamów</a>
-      </div>
+        <div class="buttons">
+          
+            <div class="delate-btn">
+              <a href="#">Wyczyść</a>
+            </div>
+            <div class="order-btn">
+              <a href="#">Zamów</a>
+            </div>
+          
+        </div>
       </form>
     </div>
   </div>
