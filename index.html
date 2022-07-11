@@ -6,17 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;600;700&display=swap" rel="stylesheet">
 
-  <title>Document</title>
+  <title>PickaShop</title>
 </head>
 
 <body>
   <div class="wallpaper">
+
     <div class="logo"><img src="img\PickaShop_Biale.png" alt="logo_PickaShop"></div>
 
     <div class="wrapper">
-      <h2>ZAMÓWIENIE</h2>
-      <form>
+      <h1>ZAMÓWIENIE</h1>
+      <form id="form" method="POST">
 
         <div class="pizza-box">
           <label for="pizza">Wybierz pizzę:*</label>
@@ -33,73 +37,89 @@
         <div class="sos-box">Wybierz sos:<span class="span-condition"> (max. 2)</span>
 
           <li>
-            <input type="checkbox" name="mode" value="Pomidorowy" required="">
+            <input type="checkbox" id="pomidorowy" name="sos" value="Pomidorowy" >
             <label>Pomidorowy</label>
           </li>
 
           <li>
-            <input type="checkbox" name="mode" value="Czosnkowy" required="">
+            <input type="checkbox" id="czosnkowy" name="sos" value="Czosnkowy" >
             <label>Czosnkowy</label>
           </li>
 
           <li>
-            <input type="checkbox" name="mode" value="OstryPomidorowy" required="">
+            <input type="checkbox" id="ostry" name="sos" value="OstryPomidorowy" >
             <label>Ostry Pomidorowy</label>
           </li>
 
           <li>
-            <input type="checkbox" name="mode" value="Bazyliowy" required="">
+            <input type="checkbox" id="bazyliowy" name="sos" value="Bazyliowy" >
             <label>Bazyliowy</label>
           </li>
 
           <li>
-            <input type="checkbox" name="mode" value="Serowy" required="">
+            <input type="checkbox" id="serowy" name="sos" value="Serowy" >
             <label>Serowy</label>
           </li>
 
         </div>
 
-        <div class="user-box">
+        <div class="bev-box">Wybierz napój:
+          <li>
+            <input type="checkbox" id="cola" name="mode" value="cola" >
+            <label>Coca-Cola</label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="fanta" name="mode" value="fanta" >
+            <label>Fanta</label>
+          </li>
+
+
+        </div>
+
+        <div class="user-box success">
           <label></label>
-          <input type="text" name="" placeholder="Imię i nazwisko*" required="">
+          <input type="text" id="fname" name="name" placeholder="Imię i nazwisko*"  >
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" name="" placeholder="Email*" required="">
+          <input type="text" id="email" name="email" placeholder="Email*" >
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" name="" placeholder="Telefon*" required="">
+          <input type="text" id="telefon" name="Telefon" placeholder="Telefon*" >
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" name="" placeholder="Adres dostawy*" required="">
+          <input type="text" id="adres" name="Adres" placeholder="Adres dostawy*" >
         </div>
 
         <div class="textarea-box">
-
-          <textarea name="tekst" rows="5" placeholder="Wiadomość dla kucharza"></textarea>
+          <label></label>
+          <textarea id="textarea" name="wiadomosc" rows="5" placeholder="Wiadomość dla kucharza"></textarea>
 
           </textarea>
           <span class="span-footer">*Pola obowiązkowe</span>
 
         </div>
         <div class="buttons">
+
+          <button class="btn delate-btn">
+            Wyczyść</button>
           
-            <div class="delate-btn">
-              <a href="#">Wyczyść</a>
-            </div>
-            <div class="order-btn">
-              <a href="#">Zamów</a>
-            </div>
-          
+          <button class="btn order-btn">
+            Zamów</button>
+          </div>
+
         </div>
+
       </form>
     </div>
   </div>
+  <script src="js\script.js"></script>
 </body>
 
 </html>
