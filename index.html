@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;600;700&display=swap" rel="stylesheet">
 
   <title>PickaShop</title>
+  <script defer src="js\script.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 
     <div class="wrapper">
       <h1>ZAMÓWIENIE</h1>
-      <form id="form" method="POST">
+      <form id="form" action="/" method="POST">
 
         <div class="pizza-box">
           <label for="pizza">Wybierz pizzę:*</label>
@@ -65,21 +66,21 @@
 
         <div class="bev-box">Wybierz napój:
           <li>
-            <input type="checkbox" id="cola" name="mode" value="cola" >
+            <input type="checkbox" id="cola" name="napoj" value="cola" >
             <label>Coca-Cola</label>
           </li>
 
           <li>
-            <input type="checkbox" id="fanta" name="mode" value="fanta" >
+            <input type="checkbox" id="fanta" name="napoj" value="fanta" >
             <label>Fanta</label>
           </li>
 
 
         </div>
-
+        <div id="error"></div>
         <div class="user-box success">
           <label></label>
-          <input type="text" id="fname" name="name" placeholder="Imię i nazwisko*"  >
+          <input type="text" id="fname" name="fname" placeholder="Imię i nazwisko*"  >
         </div>
 
         <div class="user-box">
@@ -110,7 +111,7 @@
           <button class="btn delate-btn" id="delate-btn">
             Wyczyść</button>
           
-          <button class="btn order-btn" id="order-btn">
+          <button class="btn order-btn" id="">
             Zamów</button>
           </div>
 
@@ -119,7 +120,7 @@
       </form>
     </div>
   </div>
-  <script src="js\script.js"></script>
+  
 </body>
 
 </html>
