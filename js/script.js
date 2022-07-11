@@ -1,10 +1,10 @@
 
-const form = document.getElementById('form');
+// const form = document.getElementById('form');
 
-form.addEventListener('submit', function (e){
-  e.preventDefault();
+// form.addEventListener('submit', function (e){
+//   e.preventDefault();
 
-  const data = new FormData(form);
-  console.log([...data])
+//   const data = new FormData(form);
+//   console.log([...data])
   
-})
+// })
