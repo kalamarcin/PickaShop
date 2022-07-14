@@ -22,10 +22,10 @@
 
     <div class="wrapper">
       <h1>ZAMÓWIENIE</h1>
-      <form id="form" action="/" method="POST">
+      <form id="form" action="/" >
 
         <div class="pizza-box">
-          <label for="pizza">Wybierz pizzę:*</label>
+          <label for="pizza">Wybierz pickę:*</label>
           <select id="pizza" name="pizza" >
 
             <option value="">-- Wybierz --</option>
@@ -75,32 +75,31 @@
             <input type="checkbox" id="fanta" name="napoj" value="fanta" >
             <label>Fanta</label>
           </li>
-
-
         </div>
-        <div id="error"></div>
-        <div class="user-box success">
+      
+
+        <div class="user-box fname" id="fname-box">
           <label></label>
-          <input type="text" id="fname" name="fname" placeholder="Imię i nazwisko*"  >
-          <div class="error-fname"></div>
+          <input type="text" id="fname" name="fname" placeholder="Imię i nazwisko*" onkeydown="validation()"  >
+          
+        </div>
+
+        <div class="user-box email" id="email-box" >
+          <label></label>
+          <input type="text"  id="email" name="email" placeholder="Email*" onkeydown="validation()"  >
+          
+        </div>
+
+        <div class="user-box telefon" id="telefon-box">
+          <label></label>
+          <input type="text"  id="telefon" name="Telefon" placeholder= "Telefon*" onkeydown="validation()"   >
+          
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" id="email" name="email" placeholder="Email*"  >
-          <div class="error-email"></div>
-        </div>
-
-        <div class="user-box">
-          <label></label>
-          <input type="text" id="telefon" name="Telefon" placeholder= "Telefon*"  >
-          <div class="error-telefon"></div>
-        </div>
-
-        <div class="user-box">
-          <label></label>
-          <input type="text" id="adres" name="Adres" placeholder="Adres dostawy*" >
-          <div class="error-adres"></div>
+          <input type="text"  name="Adres" placeholder="Adres dostawy*" >
+          
         </div>
 
         <div class="textarea-box">
@@ -113,10 +112,10 @@
         </div>
         <div class="buttons">
 
-          <button type="submit" class="btn delate-btn" id="delate-btn">
+          <button type="reset"  class="btn delate-btn" id="delate-btn">
             Wyczyść</button>
           
-          <button class="btn order-btn" id="">
+          <button class="btn order-btn">
             Zamów</button>
           </div>
 
