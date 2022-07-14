@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style\style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;600;700&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
 
         <div class="pizza-box">
           <label for="pizza">Wybierz pizzę:*</label>
-          <select id="pizza" name="pizza" required>
+          <select id="pizza" name="pizza" >
 
             <option value="">-- Wybierz --</option>
             <option value="Margherita">Margherita</option>
@@ -80,25 +81,25 @@
         <div id="error"></div>
         <div class="user-box success">
           <label></label>
-          <input type="text" id="fname" name="fname" placeholder="Imię i nazwisko*" required >
+          <input type="text" id="fname" name="fname" placeholder="Imię i nazwisko*"  >
           <div class="error-fname"></div>
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" id="email" name="email" placeholder="Email*" required >
+          <input type="text" id="email" name="email" placeholder="Email*"  >
           <div class="error-email"></div>
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" id="telefon" name="Telefon" placeholder= "Telefon*" required >
+          <input type="text" id="telefon" name="Telefon" placeholder= "Telefon*"  >
           <div class="error-telefon"></div>
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" id="adres" name="Adres" placeholder="Adres dostawy*" required>
+          <input type="text" id="adres" name="Adres" placeholder="Adres dostawy*" >
           <div class="error-adres"></div>
         </div>
 
@@ -112,7 +113,7 @@
         </div>
         <div class="buttons">
 
-          <button class="btn delate-btn" id="delate-btn">
+          <button type="submit" class="btn delate-btn" id="delate-btn">
             Wyczyść</button>
           
           <button class="btn order-btn" id="">
@@ -124,7 +125,7 @@
       </form>
     </div>
   </div>
-  
-</body>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
 </html>
