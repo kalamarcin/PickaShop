@@ -25,9 +25,9 @@
 
         <div class="pizza-box">
           <label for="pizza">Wybierz pizzę:*</label>
-          <select id="pizza" name="pizza" required="">
+          <select id="pizza" name="pizza" required>
 
-            <option value="0">-- Wybierz --</option>
+            <option value="">-- Wybierz --</option>
             <option value="Margherita">Margherita</option>
             <option value="Neapolitańska">Neapolitańska</option>
             <option value="Capricciosa">Capricciosa</option>
@@ -38,27 +38,27 @@
         <div class="sos-box">Wybierz sos:<span class="span-condition"> (max. 2)</span>
 
           <li>
-            <input type="checkbox" id="pomidorowy" name="sos" value="Pomidorowy" >
+            <input type="checkbox" class="check" id="pomidorowy" name="sos" value="Pomidorowy" >
             <label>Pomidorowy</label>
           </li>
 
           <li>
-            <input type="checkbox" id="czosnkowy" name="sos" value="Czosnkowy" >
+            <input type="checkbox" class="check" id="czosnkowy" name="sos" value="Czosnkowy" >
             <label>Czosnkowy</label>
           </li>
 
           <li>
-            <input type="checkbox" id="ostry" name="sos" value="OstryPomidorowy" >
+            <input type="checkbox" class="check" id="ostry" name="sos" value="OstryPomidorowy" >
             <label>Ostry Pomidorowy</label>
           </li>
 
           <li>
-            <input type="checkbox" id="bazyliowy" name="sos" value="Bazyliowy" >
+            <input type="checkbox" class="check" id="bazyliowy" name="sos" value="Bazyliowy" >
             <label>Bazyliowy</label>
           </li>
 
           <li>
-            <input type="checkbox" id="serowy" name="sos" value="Serowy" >
+            <input type="checkbox" class="check" id="serowy" name="sos" value="Serowy" >
             <label>Serowy</label>
           </li>
 
@@ -80,22 +80,26 @@
         <div id="error"></div>
         <div class="user-box success">
           <label></label>
-          <input type="text" id="fname" name="fname" placeholder="Imię i nazwisko*"  >
+          <input type="text" id="fname" name="fname" placeholder="Imię i nazwisko*" required >
+          <div class="error-fname"></div>
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" id="email" name="email" placeholder="Email*" >
+          <input type="text" id="email" name="email" placeholder="Email*" required >
+          <div class="error-email"></div>
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" id="telefon" name="Telefon" placeholder="Telefon*" >
+          <input type="text" id="telefon" name="Telefon" placeholder= "Telefon*" required >
+          <div class="error-telefon"></div>
         </div>
 
         <div class="user-box">
           <label></label>
-          <input type="text" id="adres" name="Adres" placeholder="Adres dostawy*" >
+          <input type="text" id="adres" name="Adres" placeholder="Adres dostawy*" required>
+          <div class="error-adres"></div>
         </div>
 
         <div class="textarea-box">
