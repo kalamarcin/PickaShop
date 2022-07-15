@@ -12,9 +12,9 @@ const btnReset = function () {
 clearBtn.addEventListener("click", btnReset);
 
 
-[Stworzyłem ta funkcje ale pozniej doczytalem, ze wystarczy dodac typ "reset" do button ale juz to zostawiłem.]
+### [Stworzyłem ta funkcje ale pozniej doczytalem, ze wystarczy dodac typ "reset" do button ale juz to zostawiłem.]
 
-### 2. Maximum checkd checkbox (max. 2)
+# 2. Maximum checkd checkbox (max. 2)
 
 const checks = document.querySelectorAll(".check");
 const max = 2;
