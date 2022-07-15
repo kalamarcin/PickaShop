@@ -1,0 +1,139 @@
+@import "..style/tokens.scss";
+
+@mixin bodyNameMixin {
+	margin: 0;
+	padding: 0;
+	font-family: "Barlow", sans-serif;
+}
+
+@mixin wallpaperNameMixin {
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/pizza-4968645_1920.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@mixin imgNameMixin {
+	width: 110px;
+	position: absolute;
+	top: 70px;
+	right: 100px;
+}
+
+@mixin wrapperNameMixin {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.744);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+
+@mixin h1NameMixin {
+	margin: 0 0 30px;
+	padding: 0;
+	color: $withe-color;
+	text-align: center;
+}
+
+@mixin pizzaboxNameMixin {
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	color: $withe-color;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+@mixin selectNameMixin {
+	padding: 2px;
+	background-color: $gray-color;
+	position: absolute;
+	right: 30px;
+	font-size: 15px;
+	text-align: center;
+	width: 180px;
+	font-family: "Raleway", sans-serif;
+}
+
+@mixin userboxInputNameMixin {
+	width: 100%;
+	padding: 12px 0;
+	font-size: 16px;
+	color: $withe-color;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid $withe-color;
+	outline: none;
+	background: transparent;
+	font-weight: 600;
+}
+
+@mixin validNameMixin {
+	content: "";
+	position: absolute;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/valid.png);
+	background-size: cover;
+	margin-top: 10px;
+}
+
+@mixin invalidNameMixin {
+	content: "";
+	position: absolute;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/invalid.png);
+	background-size: cover;
+	margin-top: 10px;
+}
+
+@mixin textareaNameMixin {
+	position: relative;
+	color: $withe-color;
+	font-family: $font-main;
+	font-weight: 600;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px solid $withe-color;
+	outline: none;
+	background: transparent;
+}
+
+@mixin btnNameMixin {
+	outline: none;
+	background: #141e30;
+	border: 0;
+	border-radius: 4px;
+	padding: 12px 20px;
+	color: $withe-color;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+@mixin delateBtnNameMixin {
+	background: $color-denger;
+	color: $withe-color;
+	border-radius: 1px;
+	box-shadow: 0 0 10px $color-denger;
+	transition-duration: 800ms;
+}
+
+@mixin orderBtnNameMixin {
+	background: $color-success;
+	color: rgb(0, 0, 0);
+	border-radius: 1px;
+	box-shadow: 0 0 10px $color-success;
+	transition-duration: 800ms;
+}
