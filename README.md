@@ -20,3 +20,7 @@ function selectiveCheck(event) { const checkedChecks = document.querySelectorAll
 
 4. Toastify alert
 [Druga walidacje juz przy wysylaniu (sumbit) formularza uzylem biblioteki "toastów" ktore wyskakuja z gory strony ( https://apvarun.github.io/toastify-js/ ) Nie chcialem uzywac zwyklej funkcji "alert" bo chcialem poznac inne metody. Robilem to oczywiscie wg tutoriala ale gosc fajnie wszystko wytlumaczyl.]
+
+---
+permalink: /index.html
+---
